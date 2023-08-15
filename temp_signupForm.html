@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Sign up form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #303030;
+            /* background-color: black; */
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center ;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        label{
+            text-transform: uppercase;
+            font: bold;
+            font-size: large;
+            color: rgb(125, 208, 0);
+        }
+        input{
+            display: block;
+            width: 25%;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 100px;
+            border:  2px solid greenyellow;
+            
+        }
+        input:hover{
+            background-color: rgb(197, 254, 111);
+            
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            border-radius: 100px;
+            background-color: rgb(184, 236, 106);
+            color: whitesmoke;
+            font-size: large;
+            font-weight: bold;
+            padding: 10px;
+            margin:10px;
+            border-color: white;
+            width: 200px;
+            text-align: center;
+        }
+        button:hover{
+            transform: scale(105%);
+            background-color: greenyellow;
+        }
+    
+    </style>
+</head>
+<body>
+    <form>
+        <label for="userName">UserName</label>
+        <input type="text" id="userName" required/>
+        <br/>
+        <label for="emailAdd">Email Address</label>
+        <input type="email" id="emailAdd" required/>
+        <br/>
+        <label for="passwordAdd">Password</label>
+        <input type="password" id="passwordAdd" required/>
+        <br/>
+        <label for="dateOFBirth">DOB</label>
+        <input type="date" id="dateOfBirth" required />
+        <br/>
+        <label for="phoneAdd">Phone No</label>
+        <input type="tel" id="phoneAdd"/>
+        <br/>
+        <label for="checkBoxAdd">I agree to Terms and Conditions</label>
+        <input type="checkbox" id="checkBoxAdd">
+        <br/>
+        <!-- <input type="submit" value="Sign up"/> -->
+        <button>Sign up</button>
+        
+    </form>
+</body>
+</html>
